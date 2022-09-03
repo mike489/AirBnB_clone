@@ -33,6 +33,7 @@ def parse(arg):
 
 class HBNBCommand(cmd.Cmd):
     """Defines the HolbertonBnB command interpreter.
+
     Attributes:
         prompt (str): The command prompt.
     """
@@ -161,7 +162,7 @@ class HBNBCommand(cmd.Cmd):
        <class>.update(<id>, <dictionary>)
         Update a class instance of a given id by adding or updating
         a given attribute key/value pair or dictionary."""
-        argl = parse(arg)
+[O        argl = parse(arg)
         objdict = storage.all()
 
         if len(argl) == 0:
